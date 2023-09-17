@@ -1,0 +1,685 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400,800&family=Merriweather&family=Montserrat:wght@300;600;900&family=Roboto+Condensed&display=swap');
+
+/* font-family: 'Bricolage Grotesque', sans-serif;
+  font-family: 'Merriweather', serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    /* width: 100vw;
+    height: 100vh; */
+    background-color: #D0D4D5;
+}
+
+.heading {
+    width: 100%;
+    height: 14vh;
+    background-color: #e1e1e1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    z-index: 99;
+}
+
+.heading img {
+    width: 60px;
+    height: auto;
+}
+
+.navbar {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(132, 132, 132);
+}
+
+.navbar .active {
+    color: #000000;
+}
+
+.navbar a:hover {
+    color: #202020;
+    font-weight: bold;
+    scale: 1.1;
+}
+
+.nav-icon {
+    cursor: pointer;
+    font-size: 25px;
+    width: 10vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* background-color: #fd8d8d; */
+}
+
+/* page1 css */
+
+.page1 {
+    margin: 3% 5%;
+    width: 90%;
+    height: 100%;
+    background-color: #fff;
+    position: relative;
+    white-space: nowrap;
+    /* overflow-x: hidden; */
+}
+
+
+
+.swiper {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    height: 600px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.page2 {
+    width: 90%;
+    height: 50%;
+    margin: 1% 5%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page2-content {
+    padding: 5% 0;
+    text-align: center;
+}
+
+.page2-content h4 {
+    text-transform: capitalize;
+    font-weight: lighter;
+}
+
+.page2-content h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: -.3rem;
+}
+
+.page2-content p {
+    text-transform: capitalize;
+    font-size: 15px;
+    color: #393939;
+    padding-top: 2%;
+    padding-bottom: 6%;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #000000;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: .2s ease-in;
+}
+
+.btn:hover {
+    scale: 1.1;
+    background-color: #fff;
+    color: #000000;
+    border: 1px solid #9e9e9e;
+    box-shadow: none;
+}
+
+.page3 {
+    width: 90%;
+    height: 90vh;
+    margin: 1% 5%;
+    background-color: #fff;
+}
+
+.page3 h3 {
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 15px 20px;
+}
+
+.page3-imgs {
+    width: 100%;
+    height: 90%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.img-first {
+    width: 45%;
+    height: 100%;
+    padding-top: 30%;
+    padding-left: 2%;
+
+    background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.4,cs_srgb/h_700,c_limit/f276a8cb-7292-45d0-b494-abfbdd0e0734/nike-just-do-it.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-second {
+    width: 45%;
+    height: 100%;
+    padding-top: 30%;
+    padding-left: 2%;
+
+    background-image: url(https://static.nike.com/a/images/f_auto/dpr_1.4,cs_srgb/h_700,c_limit/6b062282-8352-48f1-9119-f55786cdac24/nike-just-do-it.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.page4 {
+    width: 90%;
+    height: 50%;
+    margin: 1% 5%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page4-content {
+    padding: 5% 0;
+    text-align: center;
+}
+
+.page4-content h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: -.3rem;
+}
+
+.page4-content p {
+    text-transform: capitalize;
+    font-size: 15px;
+    color: #393939;
+    padding-top: 2%;
+    padding-bottom: 6%;
+}
+
+.page5 {
+    width: 90%;
+    height: 140vh;
+    margin: 1% 5% ;
+    background-color: #fff;
+}
+
+.page5 h3 {
+    font-size: 1rem;
+    font-weight: 300;
+    padding: 15px 20px;
+}
+
+.page5-cards {
+    width: 90%;
+    height: 90%;
+    margin: 0 4%;
+  
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+ 
+}
+
+.page5-cards .card1 {
+    width: 45%;
+    height: 45%;
+
+}
+
+.page5-cards .card2 {
+    width: 45%;
+    height: 45%;
+
+}
+
+.page5-cards .card3 {
+    width: 45%;
+    height: 45%;
+
+}
+
+.page5-cards .card4 {
+    width: 45%;
+    height: 45%;
+
+}
+
+.page5-cards .swiper {
+    width: 90%;
+    height: 100%;
+    padding-top: 2%;
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -150px; */
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+.page6 {
+    width: 90%;
+    height: 50%;
+    margin: 1% 5%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page6-content {
+    padding: 5% 0;
+    text-align: center;
+}
+
+.page6-content h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: -.3rem;
+}
+.page6-content h6 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: -.01rem;
+}
+.page6-content p {
+    text-transform: capitalize;
+    font-size: .8rem;
+    color: #393939;
+    padding: 2% 3% 6%;
+ 
+
+}
+.page7{
+    width: 90%;
+    height: 90vh;
+    margin: 1% 5%;
+    background-color: #fff;
+}
+.page7 h5{
+    font-size: 1.4rem;
+    font-weight: 300;
+    padding: 15px 20px;
+}
+.page7-img{
+    width: 100%;
+    height: 90%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page7-img img{
+    width: 90%;
+    height: 100%;
+    object-fit: fill;
+    margin-bottom: 10px;
+}
+.page8{
+    width: 90%;
+    height: 40vh;
+    margin: 1% 5% 0;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4%;
+}
+.page8-content{
+    width: 90%;
+    height: 90%;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page8-content .content1{
+    width: 25%;
+    height: 100%;
+}
+.content1 h5{
+    font-size: 1.2rem;
+    padding-bottom: 4%;
+}
+.content1 h6{
+    font-size: 1rem;
+    font-weight: 300;
+    padding-bottom: 2%;
+    color: #8e8e8e;
+}
+
+footer{
+    width: 100%;
+    height: 50vh;
+    background-color: #000000;
+    padding: 2% 2.5%;
+}
+.top-content{
+    width: 95%;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.side-content1{
+    width: 20%;
+    height: 100%;
+    color: #D0D4D5;
+}
+.side-content1 h5{
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: -.02rem;
+    font-stretch: extra-condensed;
+    padding: 4% 0;
+}
+.side-content1 h6{
+    font-size: .8rem;
+    font-weight: 300;
+    padding: 3% 0;
+    color: #ababab;
+}
+.side-content2{
+    width: 30%;
+    height: 100%;
+    /* background-color: #393939; */
+    color: #D0D4D5;
+    margin-left: 10%;
+    padding: 1% 2%;
+    display: flex;
+    align-items: start;
+    justify-content: end;
+}
+i{
+    margin: 0 3%;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+i:hover{
+    scale: 1.1;
+   
+}
+.last-content{
+    width: 95%;
+    height: 25%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    color: #fff;
+}
+.last-content h6{
+    font-size: .7rem;
+    font-weight: 300;
+    color: #ababab;
+    padding-top: 1%;
+}
+.last-content .end{
+    width: 50%;
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+   
+}
+@media (max-width: 992px) {
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar.responsive {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #e1e1e1;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+
+    .navbar a {
+        padding-left: 6vw;
+        padding-top: 2vw;
+    }
+
+    .nav-icon {
+        width: 40vw;
+    }
+
+    .swiper-slide {
+        width: 400px;
+        height: 400px;
+    }
+
+    .page2-content h1 {
+        font-size: 3rem;
+    }
+
+    .page2-content p {
+        font-size: 12px;
+    }
+
+    .img-first {
+        margin-bottom: 2%;
+        padding-top: 45%;
+    }
+
+    .img-second {
+        margin-bottom: 2%;
+        padding-top: 45%;
+    }
+    .page7-img img{
+        height: 90%;
+        object-fit: fill;
+    }
+    .content1{
+        margin: 0 1%;
+    }
+    .content1 h6{
+        font-size: .85rem;
+        font-weight: 300;
+        padding-bottom: 3%;
+    }
+    .side-content1{
+        margin: 0 1.5%;
+    }
+    .side-content1 h5{
+        font-size: 1rem;
+    }
+    .side-content1 h6{
+        font-size: .7rem;
+    }
+    .side-content2 i{
+        
+        font-size: 1.5rem;
+        margin: 3% 4%;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .navbar a {
+        display: block;
+        padding-left: 12vw;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .swiper-slide {
+        width: 200px;
+        height: 200px;
+    }
+
+    .page2-content h1 {
+        font-size: 1.8rem;
+        letter-spacing: -.1rem;
+    }
+
+    .page2-content p {
+        font-size: 10px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: .8rem;
+    }
+
+    .page3-imgs {
+        flex-direction: column;
+    }
+
+    .img-first {
+        width: 70%;
+        height: 50%;
+        margin-bottom: 2%;
+        padding-top: 30%;
+        background-size: fill;
+        font-size: .8rem;
+    }
+
+    .img-second {
+        width: 70%;
+        height: 50%;
+        margin-bottom: 2%;
+        padding-top: 30%;
+        background-size: fill;
+        font-size: .8rem;
+    }
+
+    .page4-content h1 {
+        font-size: 3rem;
+    }
+    .page5{
+        height: 170vh;
+    }
+    .page5-cards {
+        width: 90%;
+        height: 90%;
+        margin: 0 6%;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+       flex-wrap: nowrap;
+     
+    }
+    .page5-cards .swiper {
+        padding-top: 0;
+    }
+    .page5-cards .card1 {
+        width: 95%;
+        height: 28%;
+    
+    }
+    
+    .page5-cards .card2 {
+        width: 95%;
+        height: 26%;
+    
+    }
+    
+    .page5-cards .card3 {
+        width: 95%;
+        height: 25%;
+    
+    }
+    
+    .page5-cards .card4 {
+        width: 95%;
+        height: 25%;
+        padding-bottom: 20px;
+    }
+    .page6-content h1{
+        font-size: 2rem;
+        letter-spacing: -.1rem;
+    }
+    .page6-content h6{
+        font-size: .8rem;
+    }
+    .page7-img{
+        align-items: start;
+        height: 80%;
+    }
+    .page7-img img{
+        height: 100%;
+        object-fit: cover;
+    }
+    .content1{
+        margin: 0 1%;
+    }
+    .content1 h6{
+        font-size: .75rem;
+        font-weight: 300;
+        padding-bottom: 3%;
+    }
+
+    .content1 h5{
+        font-size: 1rem;
+        padding-bottom: 4%;
+    }
+
+    .side-content1{
+        margin: 0 1.5%;
+    }
+    .side-content1 h5{
+        font-size: .8rem;
+    }
+    .side-content1 h6{
+        font-size: .55rem;
+    }
+    .side-content2 i{
+        font-size: 1.2rem;
+        margin: 5% 4%;
+    }
+    .last-content h6{
+        font-size: .55rem;
+    }
+}
